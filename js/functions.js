@@ -168,6 +168,16 @@ function fadeNavBar(reverse) {
     }
 }
 
+function fadeNavBar(reverse) {
+    if (reverse) {
+        $('.fixed').animate({top:'-45px'},350);
+        titleFade = true;
+    } else {
+        $('.fixed').animate({top:'0'},750);
+        titleFade = false;
+    }
+}
+
 function checkFade() {
     if ( !($(window).scrollTop() < window.innerHeight) && titleFade ) {
         fadeNavBar(false);
@@ -271,6 +281,10 @@ setInterval(function() {
         checkFade();
         revealSlides(galleries);
         checkAdPos();
+    }
+},250);
+setInterval(function() {
+    if (didScroll) {
         if ( $(window).scrollTop() > (window.innerHeight / 2) ) {
             if (titleFade) {
                 fadeNavBar(false);
@@ -279,4 +293,4 @@ setInterval(function() {
             fadeNavBar(true);
         }
     }
-},250);
+},1000);
