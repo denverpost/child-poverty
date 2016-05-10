@@ -124,7 +124,7 @@
 <div class="fixed">
 	<nav class="top-bar fixed" data-topbar data-options="is_hover:true;scrolltop:false;custom_back_text:true;back_text:Back;">
 		<ul class="title-area">
-			<li class="name"><div id="name1"><a href="http://www.denverpost.com"><img src="./img/the-denver-post-logo-30.png" id="logoimg" border="0" alt="The Denver Post" /></a></div></li>
+			<li class="name"><div id="name1"><a href="http://www.denverpost.com"><img src="./img/dpwhite.svg" id="logoimg" border="0" alt="The Denver Post" /></a></div><div id="name2"><a href="http://www.denverpost.com"><img src="./img/dpbug.svg" id="logosmall" border="0" alt="DP Logo"></a><a href="index.html"><h2>Childhood Poverty</h2></a></div></li>
 			<li class="toggle-topbar menu-icon"><a href="javascript:void(0);"><span></span></a></li>
 		</ul>
 		<section class="top-bar-section">
@@ -155,9 +155,13 @@
 				<li class="divider"></li>
 				<li class="top-top"><a href="javascript:void(0);" data-reveal-id="credits">Credits</a></li>
 				<li class="divider"></li>
-				<li class="top-top social firstsocial"><a href="http://twitter.com/share?text=Below the Line: Childhood poverty in Colorado in 2008 &url=http://dpo.st/breakdown&via=DenverPost&related=JBrownDPost" onclick="window.open(this.href, 'gpluswin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=1'); return false;"><img src="./img/icon-twitter.png" alt="Tweet this" /></a></li>
-				<li class="top-top social"><a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://dpo.st/breakdown&p[images][0]=http://extras.denverpost.com/mentalillness/img/breakdown-fb-image.png&p[title]=Breakdown%3A%20Mental%20Health%20in%20Colorado%20%E2%80%94%20The%20Denver%20Post&p[summary]=Colorado%27s%20mental%20health%20care%20system%20is%20in%20crisis.%20Only%20a%20third%20of%20those%20who%20need%20treatment%20get%20it.%20Emergency%20rooms%2C%20jails%20and%20shelters%20are%20overwhelmed%20handling%20just%20the%20most%20severe%20cases." onclick="window.open(this.href, 'gpluswin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=1'); return false;"><img src="./img/icon-facebook.png" alt="Share on Facebook" /></a></li>
-				<li class="top-top social"><a href="https://plus.google.com/share?url=http://dpo.st/breakdown" onclick="window.open(this.href, 'gpluswin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=1'); return false;"><img src="./img/icon-google-plus.png" alt="Share on Google+" /></a></li>
+				<li class="top-top has-dropdown"><a href="javascript:void(0);">Share</a>
+					<ul class="dropdown">
+						<li class="social"><a href="javascript:void(0);" onclick="revealSocial('twitter','http://dpo.st/longhaul2','The Long Haul: Planning a trek along The Colorado Trail — The Denver Post','','','denverpost','');"><img src="./img/twitter.png" alt="Tweet this" /> Twitter</a></li>
+						<li class="social"><a href="javascript:void(0);" onclick="revealSocial('facebook','http://dpo.st/longhaul2','The Long Haul: Planning a trek along The Colorado Trail — The Denver Post','http://extras.denverpost.com/long-haul/img/longhaul-fb.jpg','Denver Post photo editor Dean Krakel plans to spend part of 2015 hiking The Colorado Trail. But he spent more than six months planning for the trek.');"><img src="./img/facebook.png" alt="Share on Facebook" /> Facebook</a></li>
+						<li class="social"><a href="javascript:void(0);" onclick="revealSocial('gplus','http://dpo.st/longhaul2');"><img src="./img/google.png" alt="Share on Google+" /> Google+</a></li>
+					</ul>
+				</li>
 			</ul>
 		</section>
 	</nav>
@@ -178,7 +182,7 @@
 				<div class="gridbox clickable" onclick="javascript:scrollDownTo('#hessling');">
 					<div class="gridphoto" style="background-image:url('./img/galleries/amon_hessling/AMON_HESSLING_019.JPG');">
 						<div class="gridphotospace"></div>
-						<p class="gridcaption">Hessling Family</p>
+						<p class="gridcaption">Hessling</p>
 					</div>
 				</div>
 			</li>
@@ -186,7 +190,7 @@
 				<div class="gridbox clickable">
 					<div class="gridphoto" style="background-image:url('./img/galleries/craig_dorsey/CRAIG_DORSEY_001.JPG');">
 						<div class="gridphotospace"></div>
-						<p class="gridcaption">Dorsey Family</p>
+						<p class="gridcaption">Dorsey</p>
 					</div>
 				</div>
 			</li>
@@ -194,7 +198,7 @@
 				<div class="gridbox clickable">
 					<div class="gridphoto" style="background-image:url('./img/galleries/dehaas_martinez/DEHAAS_MARTINEZ_022.JPG');">
 						<div class="gridphotospace"></div>
-						<p class="gridcaption">Martinez Family</p>
+						<p class="gridcaption">Martinez</p>
 					</div>
 				</div>
 			</li>
@@ -202,7 +206,7 @@
 				<div class="gridbox clickable">
 					<div class="gridphoto" style="background-image:url('./img/galleries/reza_atencio/REZA_ATENCIO_016.JPG');">
 						<div class="gridphotospace"></div>
-						<p class="gridcaption">Atencio Family</p>
+						<p class="gridcaption">Atencio</p>
 					</div>
 				</div>
 			</li>
@@ -210,7 +214,7 @@
 				<div class="gridcenter">
 					<div class="gridphoto" style="background-color:rgba(45, 45, 45,1)">
 						<div class="gridphotospace"></div>
-						<p class="gridcaption" style="display:block;opacity:1;pointer-events:none;background-color:#f4f4f4;">Childhood poverty</p>
+						<p class="gridcaption">Childhood Poverty</p>
 					</div>
 				</div>
 			</li>
@@ -218,7 +222,7 @@
 				<div class="gridbox clickable">
 					<div class="gridphoto" style="background-image:url('./img/galleries/amon_saquache/AMON_SAQUACHE_021.JPG');">
 						<div class="gridphotospace"></div>
-						<p class="gridcaption">Cook Family</p>
+						<p class="gridcaption">Cook</p>
 					</div>
 				</div>
 			</li>
@@ -226,7 +230,7 @@
 				<div class="gridbox clickable">
 					<div class="gridphoto" style="background-image:url('./img/galleries/hyoung_archuleta/HYOUNG_ARCHULETA_017.JPG');">
 						<div class="gridphotospace"></div>
-						<p class="gridcaption">Archuleta Family</p>
+						<p class="gridcaption">Archuleta</p>
 					</div>
 				</div>
 			</li>
@@ -234,7 +238,7 @@
 				<div class="gridbox clickable">
 					<div class="gridphoto" style="background-image:url('./img/galleries/sangosti_michael/SANGOSTI_MICHAEL_001.JPG');">
 						<div class="gridphotospace"></div>
-						<p class="gridcaption">Razy Family</p>
+						<p class="gridcaption">Razy</p>
 					</div>
 				</div>
 			</li>
@@ -242,7 +246,7 @@
 				<div class="gridbox clickable">
 					<div class="gridphoto" style="background-image:url('./img/galleries/cross_patty/CROSS_PATTY_023.JPG');">
 						<div class="gridphotospace"></div>
-						<p class="gridcaption">Guernsey Family</p>
+						<p class="gridcaption">Guernsey</p>
 					</div>
 				</div>
 			</li>
@@ -251,17 +255,12 @@
 	<div class="clear"></div>
 </div>
 
-<div class="row" id="health">
-	<div class="large-12 large-centered medium-12 medium-centered small-12 columns">
+<div class="row" id="maintitle">
+	<div class="large-10 large-centered medium-10 medium-centered small-12 columns">
 		<div class="title lowertitle">
 			<h1><span class="titlepart">Below the Line</span> Childhood poverty in Colorado in 2008 </h1>
 		</div>
-	</div>
-</div>
-
-<div class="row">
-	<div class="large-9 large-centered medium-11 medium-centered small-12 columns">
-		<p class="byline"> The number of children under the age of 18 who live below the poverty line in the United States increased by 9% between 2000 and 2006. In Colorado, the number of children living in poverty grew by 73%, the highest rate increase in the nation.  The Denver Post has compiled a multimedia package that details in, pictures and video the stories of some of those children.</p>
+		<p class="blurb">The number of children under the age of 18 who live below the poverty line in the United States increased by 9% between 2000 and 2006. In Colorado, the number of children living in poverty grew by 73%, the highest rate increase in the nation.  The Denver Post has compiled a multimedia package that details in, pictures and video the stories of some of those children.</p>
 	</div>
 </div>
 
@@ -299,7 +298,7 @@
 			<p class="caption"><span class="photog">Joe Amon, The Denver Post</span>Elsa plays with her Legos in her bedroom.</p>
 		</div>
 		<div class="large-10 columns">
-			<img src="./img/loading.gif" data-src="./img/./img/galleries/amon_hessling/AMON_HESSLING_004.JPG" alt="Holding racks with cannabis plants" />
+			<img src="./img/loading.gif" data-src="./img/galleries/amon_hessling/AMON_HESSLING_004.JPG" alt="Holding racks with cannabis plants" />
 			<p class="caption"><span class="photog">Joe Amon, The Denver Post</span>Elsa makes doll art after her morning homework. Her mother says she wants the children ready for their new school in the fall.</p>
 		</div>
 		<div class="large-10 columns">
@@ -372,33 +371,44 @@
 
 <section id="Photographers">
 	<div class="row">
-		<div class="large-12 large-centered medium-12 medium-centered small-12 columns">
-			<div class="title lowertitle">
-				<h1>Photographers</h1>
-			</div>
-		</div>
-		<div class="row">
-			<div class="large-12 large-centered medium-12 medium-centered small-12 columns">
-				<div class="centerphoto">
-					<img src="./img/galleries/cross_patty/CROSS_PATTY_023.JPG'" alt="This is George Brady&rsquo;s second time in the two-year mental health court program" />
-					<p class="caption">This is George Brady&rsquo;s second time in the two-year mental health court program. &ldquo;I gotta persevere with it and just stick through,&rdquo; he says.</p>
-				</div>
+		<div class="large-7 large-centered medium-8 medium-centered small-12 columns">
+			<div class="title">
+				<h2>Photographers</h2>
 			</div>
 		</div>
 	</div>
-	<div class="large-12 large-centered medium-12 medium-centered small-12 columns centervideo" id="archuleta">
-		<div class="vid-embed-wrap">
-			<div class="vid-height-space"></div>
-			<div class="vid-embed" id="video1" onclick="playerCreator('video1', 'archuleta');" style="background-image:url('./img/galleries/amon_hessling/AMON_HESSLING_004.JPG');">
-				<div class="vid-embed-play">
-					<div class="playicon"></div>
-					<div class="playtext"></div>
-				</div>
+	<div class="row">
+		<div class="large-10 large-centered medium-9 medium-centered small-12 columns">
+			<div class="centerphoto">
+				<img src="./img/galleries/cross_patty/CROSS_PATTY_023.JPG" alt="This is George Brady&rsquo;s second time in the two-year mental health court program" />
+				<p class="caption">This is George Brady&rsquo;s second time in the two-year mental health court program. &ldquo;I gotta persevere with it and just stick through,&rdquo; he says.</p>
 			</div>
-			<div class="clear"></div>
 		</div>
-				<p class="caption" style="margin-bottom:3em;">Video Capton here</span></p>
+	</div>
+	<div class="row">
+		<div class="large-7 large-centered medium-8 medium-centered small-12 columns">
+			<p class="lead">Roy Hessling&rsquo;s world crashed down around him in January 2007, when his wife, Jill, a working mom, died at 29 after heart surgery. He now raises their three children, ages 8 to 11, in the suburbs while working as a mechanic at a Brakes Plus shop. The children go to his in-laws&rsquo; home after school and wait for their father to pick them up after work. They usually stay at his in-laws' house and eat dinner as a family. &ldquo; e&rsquo;re just basic people trying to get by, &rdquo; he says.
+			Photographs by Joe Amon.</p>
+			<p>Roy Hessling&rsquo;s world crashed down around him in January 2007, when his wife, Jill, a working mom, died at 29 after heart surgery. He now raises their three children, ages 8 to 11, in the suburbs while working as a mechanic at a Brakes Plus shop. The children go to his in-laws&rsquo; home after school and wait for their father to pick them up after work. They usually stay at his in-laws' house and eat dinner as a family. &ldquo; e&rsquo;re just basic people trying to get by, &rdquo; he says.
+			Photographs by Joe Amon.</p>
+			<p>Roy Hessling&rsquo;s world crashed down around him in January 2007, when his wife, Jill, a working mom, died at 29 after heart surgery. He now raises their three children, ages 8 to 11, in the suburbs while working as a mechanic at a Brakes Plus shop. The children go to his in-laws&rsquo; home after school and wait for their father to pick them up after work. They usually stay at his in-laws' house and eat dinner as a family. &ldquo; e&rsquo;re just basic people trying to get by, &rdquo; he says.
+			Photographs by Joe Amon.</p>
 		</div>
+		<div class="large-9 large-centered medium-10 medium-centered small-12 columns centervideo" id="archuleta">
+			<h3 class="subheading">Joe Amon</h3>
+			<div class="vid-embed-wrap">
+				<div class="vid-height-space"></div>
+				<div class="vid-embed" id="video1" onclick="playerCreator('video1', 'archuleta');" style="background-image:url('./img/galleries/amon_hessling/AMON_HESSLING_004.JPG');">
+					<div class="vid-embed-play">
+						<div class="playicon"></div>
+						<div class="playtext"></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<p class="caption" style="margin-bottom:3em;">Video Capton here</span></p>
+		</div>
+	</div>
 </section>	
 
 <div id="adwrapper">
@@ -411,9 +421,9 @@
 <div class="small-12 columns" id="footer-bar">
 	<p class="small" style="float:left;">Copyright <span style="top:.18em;position:relative;font-size:1.1em;">&copy;</span> 2016, The Denver Post</p>
 	<ul class="social">
-		<li class="top-top social firstsocial"><a href="http://twitter.com/share?text=Below the Line: Childhood poverty in Colorado in 2008 &url=http://dpo.st/breakdown&via=DenverPost&related=JBrownDPost" onclick="window.open(this.href, 'gpluswin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=1'); return false;"><img src="./img/icon-twitter.png" alt="Tweet this" /></a></li>
-		<li class="top-top social"><a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://dpo.st/breakdown&p[images][0]=http://extras.denverpost.com/mentalillness/img/breakdown-fb-image.png&p[title]=Breakdown%3A%20Mental%20Health%20in%20Colorado%20%E2%80%94%20The%20Denver%20Post&p[summary]=Colorado%27s%20mental%20health%20care%20system%20is%20in%20crisis.%20Only%20a%20third%20of%20those%20who%20need%20treatment%20get%20it.%20Emergency%20rooms%2C%20jails%20and%20shelters%20are%20overwhelmed%20handling%20just%20the%20most%20severe%20cases." onclick="window.open(this.href, 'gpluswin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=1'); return false;"><img src="./img/icon-facebook.png" alt="Share on Facebook" /></a></li>
-		<li class="top-top social"><a href="https://plus.google.com/share?url=http://dpo.st/breakdown" onclick="window.open(this.href, 'gpluswin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=1'); return false;"><img src="./img/icon-google-plus.png" alt="Share on Google+" /></a></li>
+		<li class="top-top social firstsocial"><a href="http://twitter.com/share?text=Below the Line: Childhood poverty in Colorado in 2008 &url=http://dpo.st/breakdown&via=DenverPost&related=JBrownDPost" onclick="window.open(this.href, 'gpluswin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=1'); return false;"><img src="./img/twitter.png" alt="Tweet this" /></a></li>
+		<li class="top-top social"><a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://dpo.st/breakdown&p[images][0]=http://extras.denverpost.com/mentalillness/img/breakdown-fb-image.png&p[title]=Breakdown%3A%20Mental%20Health%20in%20Colorado%20%E2%80%94%20The%20Denver%20Post&p[summary]=Colorado%27s%20mental%20health%20care%20system%20is%20in%20crisis.%20Only%20a%20third%20of%20those%20who%20need%20treatment%20get%20it.%20Emergency%20rooms%2C%20jails%20and%20shelters%20are%20overwhelmed%20handling%20just%20the%20most%20severe%20cases." onclick="window.open(this.href, 'gpluswin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=1'); return false;"><img src="./img/facebook.png" alt="Share on Facebook" /></a></li>
+		<li class="top-top social"><a href="https://plus.google.com/share?url=http://dpo.st/breakdown" onclick="window.open(this.href, 'gpluswin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=1'); return false;"><img src="./img/google.png" alt="Share on Google+" /></a></li>
 	</ul>
 	<div class="clear"></div>
 </div>

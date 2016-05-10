@@ -160,20 +160,12 @@ function fadeNavBar(reverse) {
     if (reverse) {
         $('#name1').animate({opacity:1},500);
         $('#name2').animate({opacity:0},500);
+        $('#name2').css('z-index','0');
         titleFade = true;
     } else {
         $('#name1').animate({opacity:0},500);
         $('#name2').animate({opacity:1},500);
-        titleFade = false;
-    }
-}
-
-function fadeNavBar(reverse) {
-    if (reverse) {
-        $('.fixed').animate({top:'-45px'},350);
-        titleFade = true;
-    } else {
-        $('.fixed').animate({top:'0'},750);
+        $('#name2').css('z-index','3');
         titleFade = false;
     }
 }
@@ -265,11 +257,7 @@ $('.chart-late').find('img').unveil(300);
 $(document).ready(function() {
     checkHash();
     checkAdPos();
-    if ( $(window).scrollTop() > (window.innerHeight / 2) ) {
-        if (titleFade) {
-            fadeNavBar(false);
-        }
-    }
+    checkFade();
 });
 
 var didScroll = false;
@@ -283,14 +271,3 @@ setInterval(function() {
         checkAdPos();
     }
 },250);
-setInterval(function() {
-    if (didScroll) {
-        if ( $(window).scrollTop() > (window.innerHeight / 2) ) {
-            if (titleFade) {
-                fadeNavBar(false);
-            }
-        } else if (!titleFade) {
-            fadeNavBar(true);
-        }
-    }
-},1000);
