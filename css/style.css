@@ -1,6 +1,5 @@
 body {
-	background:rgba(255,255,255,1);
-    background:#fff;
+	background:rgba(45, 45, 45,1);
     z-index:1;
     font-family:'Noticia Text', Georgia, Times, 'Times New Roman', serif;
 }
@@ -305,7 +304,7 @@ div.title h2 {
 div.title h1 {
     margin:8% 0 35%;
     text-align: center;
-    font-family:'PT Sans Narrow', Helvetica, Arial, sans-serif !important;
+    font-family:'Dosis', sans-serif;, Helvetica, Arial, sans-serif !important;
     font-size:2.65em;
     font-weight:400;
     line-height:1;
@@ -320,25 +319,26 @@ div.title.lowertitle h1 {
     border-bottom:1px solid #aaa;
     padding-bottom:8%;
     width:80%;
+    color: rgba(234, 234, 234,0.6);
 }
 div.title h2 span.titlepart {
-    color:#990000;
+    color:rgba(153, 0, 0, 0.45);
     font-weight:400;
 }
 div.title h2#fade1 span.titlepart {
     font-weight:700;
 }
 div.title h1 span.titlepart {
-    color:#990000;
+    color:rgba(153, 0, 0, 0.45);
     font-weight:700;
     padding-right:.35em;
 }
 h1, h2, h3, h4 {
-  	font-family:'PT Sans Narrow', Helvetica, Arial, sans-serif !important;
-  	font-weight:700;
+  	font-family: 'Dosis', Helvetica, Arial, sans-serif !important;
+  	font-weight:400;
 }
 p, .reveal-modal li, p.lead {
-  	color:#333;
+  	color:rgba(234, 234, 234,0.6);
     font-size:1.15em;
     line-height:2;
     margin-bottom:1.6em;
@@ -413,22 +413,28 @@ p {
     text-decoration:none;
 }
 h3.subheading {
-    font-family:'Noticia Text', Georgia, Times, serif;
+    font-family: 'Dosis', sans-serif;
     font-size:2.2em;
-    font-weight:700;
+    font-weight:400;
     display:block;
     text-align:center;
-    margin:3.5em auto 1.5em;
+    margin:3.5em auto .5em;
     padding:.5em 0;
     width:70%;
-    border-bottom:1px solid rgba(0,0,0,.3);
+    border-bottom:1px solid rgba(153, 0, 0, 0.45);
+    color: rgba(234, 234, 234,0.6);
+}
+p.sublead{
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.8em;
 }
 p.lead:first-letter {
     float:left;
     font-size:6em;
-    font-weight:700;
+    font-weight:0;
     line-height:.7;
-    color:#990000;
+    color:rgba(153, 0, 0, 0.45);
     margin-right:.15em;
     margin-bottom:.25em;
 }
@@ -496,9 +502,8 @@ a:hover, * a:hover, a:hover * {
     padding: 0 .25em .5em;
 }
 .gridbox, .gridcenter {
-    margin:.25em;
-    border:1px solid #ccc;
-    padding:.5em;
+    margin:0;
+    padding:0;
     cursor:pointer;
 }
 .gridbox.expanded {
@@ -574,8 +579,8 @@ a:hover, * a:hover, a:hover * {
 }
 .gridbox p.gridcaption, .gridcenter p.gridcaption {
     opacity: 0;
-    background:#fff;
-    color:#000;
+    background:rgb(45, 45, 45);
+    color:rgba(234, 234, 234,0.6);
     font-size: 2em;
     text-transform: uppercase;
     position: absolute;
@@ -605,7 +610,7 @@ a:hover, * a:hover, a:hover * {
 .caption {
   	font-size:.95em;
     line-height:1.5;
-    color:rgba(0,0,0,0.6);
+    color:rgba(234, 234, 234,0.6);
     padding:.75em 0 0;
     margin:0;
     font-family:'PT Sans', Helvetica, Arial, sans-serif;
@@ -1118,7 +1123,7 @@ canvas#homelessline {
     }
     section.inset p {
         font-size:1.1em;
-    }
+
     #slidesoffset p.caption {
         font-size:.85em;
     }    
