@@ -428,6 +428,7 @@ p.sublead{
     text-align: center;
     font-family: 'Dosis', sans-serif;
     font-size: 1.8em;
+    margin-bottom: .2em;
 }
 p.lead:first-letter {
     float:left;
@@ -671,7 +672,7 @@ a:hover, * a:hover, a:hover * {
     height:100%;
     width:15%;
     text-align:left;
-    background:rgba(255,255,255,.7);
+    background:rgba(179, 178, 178, 0.43);
     outline:none;
 }
 .centergallery button.slick-prev {
@@ -681,7 +682,7 @@ a:hover, * a:hover, a:hover * {
     height:100%;
     width:15%;
     text-align:right;
-    background:rgba(255,255,255,.7);
+    background:rgba(179, 178, 178, 0.43);
     outline:none;
 }
 #slidesoffset .lowertitle h1 {
