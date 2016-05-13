@@ -380,6 +380,7 @@ p {
 #credits .row .columns p {
     text-indent:0;
     margin-bottom:.05em;
+    color: #7F7D7D;
 }
 #credits p strong a {
     color:#222;
@@ -391,6 +392,9 @@ p {
 }
 #credits .row .columns p:first-child {
     margin-top:.1em;
+}
+.red{   
+    color:rgba(195,50,55,1);
 }
 .reverse h1 {
     background:#000;
@@ -445,7 +449,7 @@ h3.subheading {
     font-weight:400;
     display:block;
     text-align:center;
-    margin:3.5em auto 1.5em;
+    margin:3.5em auto 1em;
     padding:.5em 0;
     width:70%;
     border-bottom:1px solid rgba(195,50,55,1);
