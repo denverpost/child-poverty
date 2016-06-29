@@ -455,10 +455,16 @@ h3.subheading {
     border-bottom:1px solid rgba(195,50,55,1);
     color: rgba(234, 234, 234,0.6);
 }
-p.sublead{
+p.sublead {
     text-align: center;
     font-family: 'Dosis', sans-serif;
-    font-size: 1.8em;
+    font-size: 1.65em;
+    margin-bottom: .2em;
+}
+p.sublead + p.sublead {
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.9em;
     margin-bottom: .2em;
 }
 p.lead:first-letter {
@@ -637,7 +643,8 @@ a:hover, * a:hover, a:hover * {
     color:rgba(195,50,55,1);
 }
 .gridbox:hover p.gridcaption {
-    opacity:.60;
+    opacity:.70;
+    color:rgba(234, 234, 234,1);
 }
 .centerphoto {
     width:100%;
@@ -716,7 +723,7 @@ a:hover, * a:hover, a:hover * {
     text-align:left;
     outline:none;
     z-index:1;
-    background-color:rgba(45, 45, 45, .75);
+    background-color:rgba(45, 45, 45, .9);
 }
 /* previous button */
 .centergallery button.slick-prev {
@@ -732,10 +739,10 @@ a:hover, * a:hover, a:hover * {
     text-align:right;   
     outline:none;
     z-index:1;
-    background-color:rgba(45, 45, 45, .75);
+    background-color:rgba(45, 45, 45, .9);
 }
 .centergallery button.slick-next:hover, .centergallery button.slick-prev:hover {
-   background-color:rgba(45, 45, 45, .5);
+   background-color:rgba(45, 45, 45, .6);
 }
 #slidesoffset .lowertitle h1 {
     padding-bottom:1em;
@@ -1097,12 +1104,11 @@ canvas#homelessline {
         padding-left:0;
     }
     div.title h2 {
-        font-size:5em;
+        font-size:2.5em;
         margin-left:5%;
         margin-right:5%;
     }
     p, .reveal-modal li, p.lead {
-        color:#333;
         font-size:1.1em;
         line-height:1.8;
         margin-bottom:1.25em;
@@ -1119,6 +1125,12 @@ canvas#homelessline {
         top:.2em;
         right:.2em;
         line-height:1;
+    }
+    p.sublead {
+        font-size: 1.5em;
+    }
+    p.sublead + p.sublead {
+        font-size: 1.75em;
     }
 }
 @media (max-width:800px) {
@@ -1152,9 +1164,13 @@ canvas#homelessline {
 }
 @media (max-width:540px) {
     div.title h2 {
-        font-size:3.5em;
+        font-size:2em;
     }
     div.title h1 {
+        font-size:2.25em;
+    }
+    div.title.lowertitle h1, section.inset div.title.lowertitle h1{
+        width:90%;
         font-size:2.25em;
     }
     .inset-video-right, section.inset .inset-video-right, .gridprofile .inset-video-right {
@@ -1176,12 +1192,28 @@ canvas#homelessline {
         margin:2.5em auto 1.5em;
         width:80%;
     }
+    p, .reveal-modal li, p.lead {
+        font-size:1em;
+    }
+    p.lead:first-letter {
+        font-size:4.5em;
+        line-height:.8;
+        margin-right:.2em;
+        margin-bottom:.1em;
+    }
+
     section.inset h3.subheading {
         font-size:1.6em;
     }
     section.inset p {
         font-size:1.1em;
-
+    }
+    p.sublead {
+        font-size: 1.35em;
+    }
+    p.sublead + p.sublead {
+        font-size: 1.5em;
+    }
     #slidesoffset p.caption {
         font-size:.85em;
     }    
