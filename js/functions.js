@@ -96,9 +96,11 @@ function scrollDownTo(whereToScroll, scrollOffset) {
     }
 }
 
+var playedVideos = [];
+
 function playerCreator(embedId, playerId, divId) {
     divId = typeof divId !== 'undefined' ? divId : false;
-    if (playedVideos.indexOf(playerId) != 0) {
+    if (playedVideos.indexOf(playerId) == -1) {
         playedVideos.push(playerId);
         $('#' + embedId).html('<video id="'+embedId+'player" preload controls autoplay> \n\
             <source src="./video/'+playerId+'.mp4" /> \n\
@@ -255,9 +257,10 @@ function checkAdPos() {
 $('.chart-late').find('img').unveil(300);
 
 $(document).ready(function() {
-    checkHash();
+    revealSlides(galleries);
     checkAdPos();
     checkFade();
+    checkHash();
 });
 
 var didScroll = false;
